@@ -456,7 +456,84 @@ p {
 
 /* End educations Section */
 
+/* start Experience section */
+#exp{
+	margin-top: 10px;
+}
+#exp .exp {
+	flex-direction: column;
+	text-align: center;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 100px 0;
+
+}
+
+#exp .exp-top {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+#exp .exp-bottom {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 50px;
+	width: 80%;
+}
+
+#exp .exp-item {
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url(./img/img-1.png);
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+#exp .exp-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.9;
+	z-index: -1;
+}
+
+#exp .exp-bottom .icon {
+	height: 80px;
+	width: 80px;
+	margin-bottom: 20px;
+}
+
+#exp .exp-item h2 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+#exp .exp-item p {
+	color: white;
+	text-align: left;
+}
+/* end experience section */
+
+
 /* Projects section */
+#projects{
+	background-color: rgba(0, 0, 0, 0.93);
+}
 #projects .projects {
 	flex-direction: column;
 	max-width: 1200px;
@@ -522,6 +599,7 @@ p {
 	height: 300px;
 	overflow: hidden;
 	position: relative;
+	/* width: 493px; */
 }
 
 #projects .project-img:after {
@@ -547,7 +625,7 @@ p {
 
 /* Skill section */
 #skills {
-	background-color: rgba(0, 0, 0, 0.93);
+	background-color: rgba(0, 0, 0, 0);
 	padding: 20px;
 }
 
@@ -582,6 +660,8 @@ p {
 
 
 /* contact Section */
+#contact{
+}
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
@@ -744,6 +824,10 @@ p {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
+	#exp .exp-bottom .exp-item {
+		flex-basis: 45%;
+		margin: 2.5%;
+	}
 
 	/* End educations Section */
 
@@ -877,6 +961,10 @@ p {
 	/* End header */
 
 	#educations .education-bottom .education-item {
+		flex-basis: 22%;
+		margin: 1.5%;
+	}
+	#exp .exp-bottom .exp-item {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
